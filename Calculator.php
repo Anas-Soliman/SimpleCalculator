@@ -3,9 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Calculator</title>
 </head>
 <body>
+    <div class="calc">
     <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post">
 
         <input type="number" name="num01" placeholder="First number" required>
@@ -18,6 +19,7 @@
         <input type="number" name="num02"placeholder="Second numbber" required>
         <button name = "submit" >Calculate</button>
     </form>
+    </div>
     <?php   
     if($_SERVER["REQUEST_METHOD"] == "POST")
     {   
